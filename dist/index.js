@@ -110,7 +110,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","amd":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_amd_vue_root_Vue_ = __webpack_require__(976);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[6].use[0]!./src/js/Component.vue?vue&type=template&id=f73c8b4e
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[6].use[0]!./src/js/Component.vue?vue&type=template&id=c36642ee
 
 const _hoisted_1 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_amd_vue_root_Vue_.createElementVNode)("div", {
   class: "v-toast__icon"
@@ -137,7 +137,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   }, 8, ["enter-active-class", "leave-active-class"]);
 }
-;// CONCATENATED MODULE: ./src/js/Component.vue?vue&type=template&id=f73c8b4e
+;// CONCATENATED MODULE: ./src/js/Component.vue?vue&type=template&id=c36642ee
 
 ;// CONCATENATED MODULE: ./src/js/helpers.js
 
@@ -302,6 +302,7 @@ const eventBus = mitt();
         return;
       }
       const wrapper = this.$refs.root.parentElement;
+      console.log('showNotice', wrapper);
       this.correctParent.insertAdjacentElement('afterbegin', this.$refs.root);
       removeElement(wrapper);
       this.isActive = true;

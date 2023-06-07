@@ -135,6 +135,7 @@ export default defineComponent({
         return
       }
       const wrapper = this.$refs.root.parentElement
+      console.log('showNotice', wrapper)
       this.correctParent.insertAdjacentElement('afterbegin', this.$refs.root);
       removeElement(wrapper);
 
