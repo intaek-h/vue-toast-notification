@@ -45,7 +45,7 @@ node_modules/
 
 # Project related
 *.tgz
-/dist/
+# /dist/
 /demo/
 /docs/
 /tmp/
