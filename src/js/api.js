@@ -3,6 +3,7 @@ import {createComponent} from './helpers';
 import eventBus from './bus.js';
 
 export const useToast = (globalProps = {}) => {
+  console.log('useToast')
   return {
     open(options) {
       let message = null;
