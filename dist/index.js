@@ -110,7 +110,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","amd":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_amd_vue_root_Vue_ = __webpack_require__(976);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[6].use[0]!./src/js/Component.vue?vue&type=template&id=c36642ee
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[6].use[0]!./src/js/Component.vue?vue&type=template&id=0e91de8e
 
 const _hoisted_1 = /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_amd_vue_root_Vue_.createElementVNode)("div", {
   class: "v-toast__icon"
@@ -137,7 +137,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   }, 8, ["enter-active-class", "leave-active-class"]);
 }
-;// CONCATENATED MODULE: ./src/js/Component.vue?vue&type=template&id=c36642ee
+;// CONCATENATED MODULE: ./src/js/Component.vue?vue&type=template&id=0e91de8e
 
 ;// CONCATENATED MODULE: ./src/js/helpers.js
 
@@ -301,10 +301,11 @@ const eventBus = mitt();
         this.queueTimer = setTimeout(this.showNotice, 250);
         return;
       }
-      const wrapper = this.$refs.root.parentElement;
-      console.log('showNotice', wrapper);
+      // const wrapper = this.$refs.root.parentElement
+      // console.log('showNotice', wrapper)
       this.correctParent.insertAdjacentElement('afterbegin', this.$refs.root);
-      removeElement(wrapper);
+      // removeElement(wrapper);
+
       this.isActive = true;
       if (this.duration) {
         this.timer = new Timer(this.dismiss, this.duration);

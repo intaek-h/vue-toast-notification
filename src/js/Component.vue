@@ -134,10 +134,10 @@ export default defineComponent({
         this.queueTimer = setTimeout(this.showNotice, 250);
         return
       }
-      const wrapper = this.$refs.root.parentElement
-      console.log('showNotice', wrapper)
+      // const wrapper = this.$refs.root.parentElement
+      // console.log('showNotice', wrapper)
       this.correctParent.insertAdjacentElement('afterbegin', this.$refs.root);
-      removeElement(wrapper);
+      // removeElement(wrapper);
 
       this.isActive = true;
 
